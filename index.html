@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Reading List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">MY READING CORNER</p>
+      <h1>Book Reading List</h1>
+      <p class="subtitle">Keep track of the stories you want to read.</p>
+    </header>
+    <form id="book-form">
+      <label for="book-title">Book title</label>
+      <input id="book-title" name="title" maxlength="120" placeholder="e.g. The Hobbit" required>
+      <label for="book-author">Author (optional)</label>
+      <input id="book-author" name="author" maxlength="100" placeholder="e.g. J. R. R. Tolkien">
+      <button type="submit">Add book</button>
+    </form>
+    <label for="search">Search your list</label>
+    <input id="search" type="search" placeholder="Search by title or author">
+    <p id="summary" aria-live="polite"></p>
+    <ul id="book-list" aria-live="polite"></ul>
+    <p class="footnote">Your list is saved in this browser on this device.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
